@@ -1,0 +1,326 @@
+* 
+{
+    box-sizing: border-box;
+    font-family: cursive;
+}
+.navbar-brand
+{
+    font-weight: bold;
+}
+.banner
+{
+    animation: moveBg 10s ease-in-out infinite alternate;
+    background-image: url("../product_color_black_MO.webp");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 15px;
+    box-shadow: inset 0 0 0 2000px rgba(28, 28, 28, 0.648);
+}
+@media (max-width: 576px) 
+{
+    .banner 
+    {
+      height: 60vh;
+      padding: 40px 15px;
+    }
+}
+.text-box
+{
+    margin-bottom: 135px;
+}
+.text-box h1
+{
+    font-size: 48px; 
+}
+@media (max-width: 626px)
+{
+    .text-box h1
+    {
+        font-size: 30px;
+    }
+}
+.text-box p
+{
+    margin: 10px 0 40px;
+    font-size: 18px;
+    color: #fff;
+}
+.details
+{
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+}
+.details h2
+{
+    font-weight: bold;
+}
+.details-card
+{
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    padding: 10px 10px;
+    margin: 10px 0 10px 0;
+    margin: 10px 0 40px;
+    transition: transform 0.3s ease;
+}
+.details-row1
+{
+    margin: 20px 0 20px 0;
+}
+.details-row2
+{
+    margin: 20px 0 20px 0;
+}
+.details-card h4
+{
+    font-weight: bold;
+}
+.details-card:hover 
+{ 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2); 
+    z-index: 1;
+    transform: translateY(-5px);
+}
+.buttons
+{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.btn-class
+{
+    margin: 0 20px 0 20px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 10px 0 rgba(0, 0, 0, 0.21);
+    border-radius: 5%;
+}
+.btn-class:hover
+{
+    transform: scale(1.05);
+    z-index: 1;
+}
+.btn-pre
+{
+    display: inline-block;
+    background-color: silver;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    border-radius: 5%;
+}
+.btn-pre:hover 
+{
+    background-color: black;
+    color: white;
+}
+.btn-knw
+{
+    display: inline-block;
+    background-color: silver;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5%;
+}
+.btn-knw:hover 
+{
+    background-color: black;
+    color: white;
+}
+.testimonials-section 
+{
+   /* background-color: #f7f7f7;*/
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    overflow-x: hidden;
+}
+.testimonials-section h2
+{
+    font-weight: bold;
+}
+.testimonial-card .card 
+{
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-top: 20px;
+}
+.testimonial-card .card:hover 
+{
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2); 
+    z-index: 1;
+    transform: translateY(-5px);
+}
+.testimonial-card h5 
+{
+    font-weight: bold;
+    margin-top: 10px;
+} 
+.cmnt-btn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-cmt
+{
+    margin: 0 20px 0 20px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 10px 0 rgba(0, 0, 0, 0.21);
+    border-radius: 5%;
+    background-color: silver;
+    color: black;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    border-radius: 5%;
+}
+.btn-cmt a 
+{
+    white-space: nowrap;
+    text-decoration: none;
+    color: black;
+}
+.btn-cmt a:hover
+{
+    color: white;
+}
+.btn-cmt:hover
+{
+    background-color: black;
+    transform: scale(1.05);
+    z-index: 1;
+}
+.footer
+{
+    background-color: #111; /* Dark background */
+    color: #fff;            /* Light text */
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 50px;
+}
+.follow i
+{
+    font-size: 32px;
+    margin: 0 15px;
+    color: white;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.follow i:hover
+{
+    color: #e1306c;            /* Example hover color (like Instagram's) */
+    transform: scale(1.2);
+}
+.footer-row
+{
+    padding: 20px 20px;
+}
+html {
+    scroll-behavior: smooth;
+}
+@keyframes moveBg 
+{
+    0% { background-position: center top; }
+    100% { background-position: center bottom; }
+} 
+
+/*modal*/
+.modal-content 
+{
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background: #fff;
+}
+
+.modal-header 
+{
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  padding: 1rem 1.5rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.modal-title 
+{
+  font-weight: 600;
+  color: #0d6efd;
+}
+
+.modal-body 
+{
+  padding: 1.5rem;
+}
+
+.modal-body label {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  display: block;
+  color: #333;
+}
+
+.modal-body input,
+.modal-body select,
+.modal-body textarea 
+{
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 0.95rem;
+  border: 1px solid #ced4da;
+  transition: border-color 0.3s;
+}
+
+.modal-body input:focus,
+.modal-body select:focus,
+.modal-body textarea:focus 
+{
+  outline: none;
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.1rem rgba(13, 110, 253, 0.25);
+}
+
+.modal-body textarea 
+{
+  resize: vertical;
+}
+
+.modal-body .form-select 
+{
+  background-color: #fff;
+}
+
+.modal-body .btn-success 
+{
+  background-color: #198754;
+  border: none;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.modal-body .btn-success:hover 
+{
+  background-color: #157347;
+}
+
+/* Optional: Adjust close button */
+.modal-header .btn-close 
+{
+  background-color: #ccc;
+  border-radius: 50%;
+  padding: 0.5rem;
+}

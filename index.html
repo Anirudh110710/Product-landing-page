@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Landing Page</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- AOS Animation -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/landing.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-light bg-white sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Neura X1</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#my-navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="utilities collapse navbar-collapse justify-content-end" id="my-navbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#detail">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#review">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <div class="banner">
+    <div class="text-box" data-aos="fade-up" data-aos-delay="1000">
+      <h1>Neura X1 - Redefine What's Possible</h1>
+      <p>Stunning design, Smarter performance, Powered by AI</p>
+    </div>
+  </div>
+
+  <!-- Product Details -->
+  <div class="for-backgnd" id="detail">
+    <div class="details">
+      <h2>About our Product.</h2>
+        <div class="container container-fluid">
+          <div class="row details-row1 justify-content-evenly">
+            <div class="details-card col-md-3" data-aos="zoom-in">
+              <h4><i class="fas fa-microchip"></i> Processor</h4>
+              <p>Snapdragon 8 Gen 4 (4nm)<br>Octa-core CPU with advanced AI acceleration.</p>
+            </div>
+            <div class="details-card col-md-3" data-aos="zoom-in">
+              <h4><i class="fas fa-memory"></i> RAM</h4>
+              <p>12GB / 16GB LPDDR5X RAM.<br>Low power consumption and ultra-fast data access speeds.</p>
+            </div>
+            <div class="details-card col-md-3" data-aos="zoom-in">
+              <h4><i class="fas fa-hdd"></i> Storage</h4>
+              <p>256GB / 512GB / 1TB UFS 4.0<br>Blazing fast read/write speeds for 8K video handling.</p>
+            </div>
+          </div>
+    
+          <div class="row details-row2 justify-content-evenly">
+            <div class="details-card col-md-3" data-aos="zoom-in">
+              <h4><i class="fas fa-gauge-high"></i> Performance</h4>
+              <p>Geekbench Score: Single-core: 2100+, Multi-core: 6000+.<br>Zero lag real-world use.</p>
+            </div>
+            <div class="details-card col-md-3" data-aos="zoom-in">
+              <h4><i class="fas fa-layer-group"></i> Multitasking</h4>
+              <p>Neura DeX, AI RAM management, split screen, pop-up views supported.</p>
+            </div>
+            <div class="details-card col-md-3" data-aos="zoom-in">
+              <h4><i class="fas fa-gamepad"></i> Gaming</h4>
+              <p>Adreno 750 GPU with ray tracing, 120Hz adaptive sync, Game Booster, vapor cooling.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Buttons -->
+      <div class="buttons">
+        <div class="btn-class" data-aos="fade-up">
+          <a href="#" class="btn-pre">Pre-Order</a>
+        </div>
+        <div class="btn-class" data-aos="fade-up">
+          <a href="#" class="btn-knw">Know More</a>
+        </div>
+      </div>
+    
+      <div class= "testimonials-section mt-5 pt-5" id="review">
+        <h2 class="text-center mb-4" data-aos="fade-up">What Our Customers Say</h2>
+        <div class="container">
+          <div class="row justify-content-evenly">
+            <div class="col-md-4 testimonial-card" data-aos="fade-left" data-aos-delay="100">
+              <div class="card p-3">
+                <p>"The Galaxy S25 is a game changer! The performance is unreal."</p>
+                <h5 class="mt-3">- Riya Patel</h5>
+              </div>
+            </div>
+            <div class="col-md-4 testimonial-card" data-aos="fade-down" data-aos-delay="200">
+              <div class="card p-3">
+                <p>"I love the AI features. Multitasking has never been easier!"</p>
+                <h5 class="mt-3">- Aarav Sharma</h5>
+              </div>
+            </div>
+            <div class="col-md-4 testimonial-card" data-aos="fade-right" data-aos-delay="300">
+              <div class="card p-3">
+                <p>"The battery life and display are amazing. Definitely worth the price."</p>
+                <h5 class="mt-3">- Sneha Gupta</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cmnt-btn">
+        <div class="btn-cmt" data-bs-toggle="modal" data-bs-target="#comment-modal">  
+          <a href="#" class="comment-link">Leave a Comment</a>
+        </div>
+      </div>
+      <div class="footer" id="contact">
+        <div class="footer-container container-fluid">
+          <div class="footer-row row justify-content-around">
+            <div class="contact col-md-auto" data-aos="fade-left">
+              <p>Dial us on: 01234567890</p>
+            </div>
+            <div class="follow col-md-auto" data-aos="fade-up">
+              <h5>Follow us on:</h5>
+              <p>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </p>
+            </div>
+            <div class="Copyright col-md-auto" data-aos="fade-right">
+              <p>© 2023 Copyright NEURA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="modal fade" id="comment-modal" tabindex="-1" aria-labelledby="comment" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="comment"> Your Review</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <form id="comment" onsubmit="return true;" class="form" role="form"><!--  method="post" action="review_submit.php" when backend works -->
+          <div class="mb-3">
+            <label class="form-label"><i class="fas fa-user"></i> Your Name</label>
+            <input type="text" class="form-control" name="full_name" placeholder="John Doe" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label"><i class="fas fa-envelope"></i> Email</label>
+            <input type="email" class="form-control" name="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label"><i class="fas fa-file-alt"></i> Comment</label>
+            <textarea class="form-control" name="project_desc" rows="4" placeholder="Leave a comment..." required></textarea>
+          </div>
+
+          <div class="d-grid">
+            <button type="submit" class="btn btn-success"><i class="fas fa-paper-plane"></i> Comment</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+  <!-- Footer -->
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+
+    // Auto-close navbar on nav link click (only on small screens)
+    const navLinks = document.querySelectorAll('.nav-link');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        if (navbarToggler.offsetParent !== null && navbarCollapse.classList.contains('show')) {
+          new bootstrap.Collapse(navbarCollapse).hide();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
