@@ -7,6 +7,18 @@
 {
     font-weight: bold;
 }
+body, nav {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* Override prefers-color-scheme */
+@media (prefers-color-scheme: dark) {
+  body, nav {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+}
 .banner
 {
     animation: moveBg 10s ease-in-out infinite alternate;
